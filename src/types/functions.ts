@@ -1,0 +1,11 @@
+export type FVoidType<T = void> = (value: T) => void;
+export const FVoidBody = (): void => {};
+export type UserLoaded<T> = (state: T) => boolean;
+export type AddUserCake<T> = (cake: T) => void;
+export type SetUser<T> = (user: T) => void;
+export type SetCakes<T> = (cakes: T) => void;
+export type AddCake<T> = (cake: T) => void;
+export type CakesLoaded<T> = (state: T) => boolean;
+export type RemoveCakeById<T> = (cakeId: T) => void;
+export type RemoveCakeByName<T> = (cakeName: T) => void;
+export type modifyCakeType<cT,T> = (cakeName: cT | undefined, newData: T) => void;
